@@ -1,0 +1,61 @@
+.aside{
+    width: 480px;
+    background: #40189E;
+    height: 100%;
+}
+.aside ul li a:not(:nth-child(2)){
+    color: #A69fff;
+    font-family: 500;
+}
+.aside div{
+    color: #A69fff;
+}
+.aside legend {
+    color:#E5E5E5;
+    font-weight: 700;
+}
+
+.active{
+    width: 95%;
+    position: relative;
+    background: #F2F2F2;
+    color: #40189E;
+    font-weight: 700;
+    border-radius: 0px 50px 50px 0px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    text-align: justify;
+    gap: 8px;
+}
+
+.active::after{
+    content: '';
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background: #40189E;
+    left: 4px;
+    top:-13px;
+    border-bottom-left-radius: 10px;
+    box-shadow: -6px 2px 0 0 #F2F2F2;
+}
+.active::before{
+    content: '';
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background: #40189E;
+    left: 4px;
+    top:100%;
+    border-top-left-radius: 10px;
+    box-shadow: -6px -2px 0 0 #F2F2F2;
+}
+.radius{
+    width: 40px;
+    background: #F2F2F2;
+    position: relative;
+    border-radius: 0px 50px 50px 0px;
+    box-shadow: 10px 0px 0px 15px #F2F2F2; 
+
+}
