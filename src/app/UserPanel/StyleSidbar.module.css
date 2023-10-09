@@ -1,0 +1,67 @@
+.aside {
+    width: 280px;
+    background: #40189E;
+    height: 100%;
+}
+.aside a {
+    font-size: 14px;
+}
+
+.aside div {
+    color: #A69fff;
+}
+
+.aside legend {
+    color: #E5E5E5;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.active {
+    width: 95%;
+    position: relative;
+    background: #F2F2F2;
+    color: #40189E;
+    font-weight: 500;
+    border-radius: 0px 50px 50px 0px;
+    display: flex;
+    padding: 10px 15px;
+    gap: 8px;
+}
+
+.active a {
+    color: #40189E;
+}
+
+.active::after {
+    content: '';
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background: #40189E;
+    left: 9px;
+    top: -13px;
+    border-bottom-left-radius: 10px;
+    box-shadow: -6px 3px 0 0 #F2F2F2;
+}
+
+.active::before {
+    content: '';
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background: #40189E;
+    left: 9px;
+    top: 100%;
+    border-top-left-radius: 10px;
+    box-shadow: -6px -3px 0 0 #F2F2F2;
+}
+
+.radius {
+    width: 10px;
+    height: 600px;
+    margin: auto 0px;
+    background: #F2F2F2;
+    border-radius: 0px 150px 150px 0px;
+    box-shadow: 10px 0px 0px 10px #F2F2F2;
+}
