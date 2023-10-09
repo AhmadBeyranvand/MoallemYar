@@ -9,6 +9,7 @@ import LogoUser from "../../../public/assets/icon/user.svg"
 import LogoUsers from "../../../public/assets/icon/users.svg"
 import LogoClandarUsers from "../../../public/assets/icon/clandarUsers.svg"
 import LogoUser2 from "../../../public/assets/icon/user2.svg"
+import MenuMobile from "./MenuMobile"
 
 
 
@@ -88,6 +89,8 @@ const Sidbar = () => {
                 </aside>
                 <div className={Style.radius}></div>
             </div>
+
+            <MenuMobile />
         </>
     )
 }

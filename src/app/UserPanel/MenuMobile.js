@@ -2,12 +2,12 @@
 import { useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
-import Close from "../../public/Close.svg"
-import HamburgerMenu from "../../public/HamburgerMenu.svg"
-import HomeIcon from "../../public/HomeIcon.svg"
-import Users from "../../public/Users.svg"
-import Profile from "../../public/Profile.svg"
-import Clendar from "../../public/Clendar.svg"
+import Close from "../../../public/Close.svg"
+import HamburgerMenu from "../../../public/HamburgerMenu.svg"
+import HomeIcon from "../../../public/HomeIcon.svg"
+import Users from "../../../public/Users.svg"
+import Profile from "../../../public/Profile.svg"
+import Clendar from "../../../public/Clendar.svg"
 
 
 export default function MenuMobile() {
@@ -61,8 +61,6 @@ export default function MenuMobile() {
           </ul>
         </div>
       </div>
-
-
     </>
   )
 }
