@@ -20,20 +20,19 @@ const Sidbar = () => {
         <>
             <div className="flex">
                 <aside className={Style.aside}>
-                    <Image width={250} src={Logo} alt="logo" className="mx-auto p-5" />
+                    <Image width={230} src={Logo} alt="logo" className="mx-auto p-5" />
                     <div className="pr-12 py-5">
                         <div className={Style.active}>
-                                <i>
+                                <i className="pr-2">
                                     <Image src={LogoHome} alt="home" />
                                 </i>
                             <a href="#" className="flex items-center gap-4">
                                 پیشخوان
                             </a>
                         </div>
-
                         <legend className="py-3">امتحانات</legend>
-                        <ul className="flex flex-col gap-5">
-                            <li className="flex gap-4 items-cente">
+                        <ul className="flex flex-col  gap-5">
+                            <li className="flex gap-4 items-center">
                                 <i>
                                     <Image src={LogoCalendar} alt="calendar" />
                                 </i>

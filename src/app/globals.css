@@ -3,8 +3,132 @@
 @tailwind utilities;
 
 @import url("~vazirmatn/Vazirmatn-Variable-font-face.css");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
 body {
   font-family: vazirmatn;
   direction: rtl;
+}
+
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: skyblue;
+}
+
+.menuToggle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 65px;
+  height: 65px;
+  background: #f2f2f2;
+  border: 5px solid skyblue;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  transform: translateY(-30px);
+}
+
+
+.menu {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: #40189E;
+  border-radius: 70px;
+  transform: translateY(-30px);
+  transition: transform  0.5s, width 0.5s, height 0.5s;
+  transition-delay: 1s, 0.5s , 0.5s;
+}
+
+.menuToggle span {
+  position: absolute;
+  inset: 0;
+}
+
+.menuToggle span::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: -23px;
+  top: 22px;
+  background: transparent;
+  border-top-right-radius: 20px;
+  box-shadow: 3px -6px skyblue;
+}
+
+.menuToggle span::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: -23px;
+  top: 22px;
+  background: transparent;
+  border-top-left-radius: 20px;
+  box-shadow: -3px -6px skyblue;
+}
+
+.menu ul {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  line-height: 80px;
+}
+
+.menu ul li {
+  list-style: none;
+  cursor: pointer;
+  opacity: 0; 
+   visibility: hidden;
+  transition-delay:0.1s  ;
+  transform: translateY(-30px);
+  transition-delay:calc(0s + var(--i)) ; 
+  transition-duration: 0.2s;
+}
+
+.menu ul li a{
+  display: block;
+  font-size: 25px;
+  color: #A69FFF;
+}
+.menu ul li a:hover{
+  color: #f2f2f2;
+}
+
+.menu ul li:nth-child(3){
+  width: 30px;
+}
+
+.menuToggle.active ~ .menu {
+  width: 360px;
+  height: 70px;
+  transform: translateY(0);
+  transition-delay: 0s, 0.5s , 0.5s;
+}
+
+.menuToggle.active ~ .menu ul li{
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+  transition-delay:calc(0.75s + var(--i)) ;
+  transition-duration: 0.2s;
+}
+.box{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

@@ -1,94 +1,101 @@
-.aside{
-    width: 360px;
+.aside {
+    width: 280px;
     background: #40189E;
     height: 100%;
 }
-.aside ul li a:not(:nth-child(2)){
-    color: #A69fff;
-    font-family: 500;
-}
-.aside div{
-    color: #A69fff;
-}
-.aside legend {
-    color:#E5E5E5;
-    font-weight: 700;
+.aside a {
+    font-size: 14px;
 }
 
-.active{
-    width: 93%;
+.aside div {
+    color: #A69fff;
+}
+
+.aside legend {
+    color: #E5E5E5;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.active {
+    width: 95%;
     position: relative;
     background: #F2F2F2;
     color: #40189E;
-    font-weight: 700;
+    font-weight: 500;
     border-radius: 0px 50px 50px 0px;
     display: flex;
-    padding: 10px;
+    padding: 10px 15px;
     gap: 8px;
 }
 
-.active a{
+.active a {
     color: #40189E;
 }
 
-.active::after{
+.active::after {
     content: '';
     position: absolute;
     width: 13px;
     height: 13px;
     background: #40189E;
-    left: 3px;
-    top:-13px;
+    left: 9px;
+    top: -13px;
     border-bottom-left-radius: 10px;
-    box-shadow: -6px 2px 0 0 #F2F2F2;
+    box-shadow: -6px 3px 0 0 #F2F2F2;
 }
-.active::before{
+
+.active::before {
     content: '';
     position: absolute;
     width: 13px;
     height: 13px;
     background: #40189E;
-    left: 3px;
-    top:100%;
+    left: 9px;
+    top: 100%;
     border-top-left-radius: 10px;
-    box-shadow: -6px -2px 0 0 #F2F2F2;
+    box-shadow: -6px -3px 0 0 #F2F2F2;
 }
-.radius{
-    width: 40px;
+
+.radius {
+    width: 10px;
+    height: 600px;
+    margin: auto 0px;
     background: #F2F2F2;
-    position: relative;
-    border-radius: 0px 50px 50px 0px;
-    box-shadow: 10px 0px 0px 15px #F2F2F2; 
+    border-radius: 0px 150px 150px 0px;
+    box-shadow: 10px 0px 0px 10px #F2F2F2;
 }
+/* 
 
-
-@media screen and (max-width : 768px){
+@media screen and (max-width : 768px) {
 
     .aside img {
         width: 80%;
     }
-    .active{
-        width: 95%;
-        border-radius:0 50px 50px 0;
+
+    .active {
+        width: 93%;
+        border-radius: 0 50px 50px 0;
         padding: 20px;
     }
-    .active a{
-        display:none ;
-    }
-   
-    .active img{
-        width: 150px;
-    }
-     .mm a{
+
+    .active a {
         display: none;
     }
+
+    .active img {
+        width: 150px;
+    }
+
     .aside legend {
         text-align: center;
         font-size: 30px;
     }
-    .aside a:not(:nth-child(1)){
+
+    .aside a:not(:nth-child(1)) {
         display: none;
     }
+
     .aside i img {
         display: flex;
         justify-content: center;
@@ -96,4 +103,4 @@
         width: 150px;
 
     }
-}
+} */
