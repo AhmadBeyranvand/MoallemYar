@@ -1,11 +1,13 @@
-import Sidbar from "./Sidbar"
+import Sidbar from "./Sidbar";
 
-const UserPanelDashboard = ()=>{
-    return (
-        <>
-        <Sidbar />
-        </>
-    )
-}
 
-export default UserPanelDashboard
+const UserPanelDashboard = () => {
+  return (
+    <div className="felx">
+      <Sidbar />
+
+    </div>
+  );
+};
+
+export default UserPanelDashboard;
