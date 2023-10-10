@@ -1,4 +1,4 @@
-import './globals.css'
+import './globals_rahmati.css'
 
 export const metadata = {
   title: 'Create Next App',
