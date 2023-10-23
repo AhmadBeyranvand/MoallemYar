@@ -21,20 +21,24 @@ const PreviewExam = () => {
             <img
               src="/assets/icon/rightArrowWhite.svg"
               alt="rightArrow"
-              className="mr-4"
+              className="w-5"
             />
             سوال قبلی
           </Link>
 
           <Link href="#" className={style.continue}>
             ثبت و ادامه
-            <img src="/assets/icon/leftArrowWhite.svg" alt="leftArrow" />
+            <img
+              src="/assets/icon/leftArrowWhite.svg"
+              alt="leftArrow"
+              className="w-5"
+            />
           </Link>
           <Link href="#" className={style.finishQuestion}>
             <img
               src="/assets/icon/tickmark.svg"
               alt="tickmark"
-              className="mr-4"
+              className="w-5"
             />
             اتمام سوالات
           </Link>

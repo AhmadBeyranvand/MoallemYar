@@ -4,27 +4,38 @@
   justify-items: center;
   background-color: #555555;
   opacity: 0.6;
-  padding: 8px 35px;
-  padding-right: 4px;
   border-radius: 30px;
   color: white;
+  justify-content: center;
+  align-items: center;
+  padding: 8px  14px;
+  font-size: 14px;
+  
+
 }
 .continue {
   display: flex;
   text-align: center;
   background-color: #40189e;
-  padding: 8px 35px;
   border-radius: 30px;
   color: white;
+  justify-content: center;
+  align-items: center;
+  padding: 8px  14px;
+  font-size: 14px;
+  
 }
 .finishQuestion {
   display: flex;
   text-align: center;
   background-color: #f59e0b;
-  padding: 8px 35px;
-  padding-right: 2px;
   border-radius: 30px;
   color: white;
+  justify-content: center;
+  align-items: center;
+  padding: 8px  14px;
+  font-size: 14px;
+  
 }
 .boxPreview {
   border-radius: 40px;
@@ -44,7 +55,7 @@
 .links{
   display: flex;
  justify-content: space-between;
- margin-top: 30px;
+ margin-top: 23px;
 }
 .previewSkeleton{
   height: 100% !important;
