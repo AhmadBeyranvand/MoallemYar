@@ -11,16 +11,25 @@ import Exambox from "./Exambox";
 export default class Slick extends Component {
   render() {
     var settings = {
-      infinite: false,
+      infinite: true,
       speed: 500,
-      slidesToShow: 5,
+      slidesToShow: 7,
       slidesToScroll: 2,
       rtl: true,
       responsive: [
         {
+          breakpoint: 1920,
+          settings: {
+            slidesToShow:7,
+            slidesToScroll: 5,
+            infinite: true,
+            dots: true,
+          },
+        },
+        {
           breakpoint: 1366,
           settings: {
-            slidesToShow: 5,
+            slidesToShow:5,
             slidesToScroll: 3,
             infinite: true,
             dots: true,
